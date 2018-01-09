@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3588AF42003D0410046183D /* DoitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3588AF32003D0410046183D /* DoitViewController.swift */; };
 		C3D8AC2720033C7300870BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8AC2620033C7300870BCD /* AppDelegate.swift */; };
-		C3D8AC2920033C7300870BCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8AC2820033C7300870BCD /* ViewController.swift */; };
+		C3D8AC2920033C7300870BCD /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8AC2820033C7300870BCD /* TaskViewController.swift */; };
 		C3D8AC2C20033C7300870BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D8AC2A20033C7300870BCD /* Main.storyboard */; };
 		C3D8AC2F20033C7300870BCD /* DoIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3D8AC2D20033C7300870BCD /* DoIT.xcdatamodeld */; };
 		C3D8AC3120033C7300870BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D8AC3020033C7300870BCD /* Assets.xcassets */; };
 		C3D8AC3420033C7300870BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D8AC3220033C7300870BCD /* LaunchScreen.storyboard */; };
+		C3D8AC3C2003B0D400870BCD /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8AC3B2003B0D400870BCD /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3588AF32003D0410046183D /* DoitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoitViewController.swift; sourceTree = "<group>"; };
 		C3D8AC2320033C7300870BCD /* DoIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D8AC2620033C7300870BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3D8AC2820033C7300870BCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3D8AC2820033C7300870BCD /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		C3D8AC2B20033C7300870BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3D8AC2E20033C7300870BCD /* DoIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoIT.xcdatamodel; sourceTree = "<group>"; };
 		C3D8AC3020033C7300870BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3D8AC3320033C7300870BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3D8AC3520033C7300870BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D8AC3B2003B0D400870BCD /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				C3D8AC2620033C7300870BCD /* AppDelegate.swift */,
-				C3D8AC2820033C7300870BCD /* ViewController.swift */,
+				C3D8AC2820033C7300870BCD /* TaskViewController.swift */,
+				C3588AF32003D0410046183D /* DoitViewController.swift */,
+				C3D8AC3B2003B0D400870BCD /* Task.swift */,
 				C3D8AC2A20033C7300870BCD /* Main.storyboard */,
 				C3D8AC3020033C7300870BCD /* Assets.xcassets */,
 				C3D8AC3220033C7300870BCD /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D8AC2920033C7300870BCD /* ViewController.swift in Sources */,
+				C3D8AC3C2003B0D400870BCD /* Task.swift in Sources */,
+				C3588AF42003D0410046183D /* DoitViewController.swift in Sources */,
+				C3D8AC2920033C7300870BCD /* TaskViewController.swift in Sources */,
 				C3D8AC2F20033C7300870BCD /* DoIT.xcdatamodeld in Sources */,
 				C3D8AC2720033C7300870BCD /* AppDelegate.swift in Sources */,
 			);
