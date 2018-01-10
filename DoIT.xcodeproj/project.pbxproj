@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C321F01B2005FEEC0078FB57 /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321F01A2005FEEC0078FB57 /* CompleteTaskViewController.swift */; };
 		C3588AF42003D0410046183D /* DoitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3588AF32003D0410046183D /* DoitViewController.swift */; };
 		C3D8AC2720033C7300870BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8AC2620033C7300870BCD /* AppDelegate.swift */; };
 		C3D8AC2920033C7300870BCD /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8AC2820033C7300870BCD /* TaskViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C321F01A2005FEEC0078FB57 /* CompleteTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTaskViewController.swift; sourceTree = "<group>"; };
 		C3588AF32003D0410046183D /* DoitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoitViewController.swift; sourceTree = "<group>"; };
 		C3D8AC2320033C7300870BCD /* DoIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D8AC2620033C7300870BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				C3D8AC2620033C7300870BCD /* AppDelegate.swift */,
 				C3D8AC2820033C7300870BCD /* TaskViewController.swift */,
+				C321F01A2005FEEC0078FB57 /* CompleteTaskViewController.swift */,
 				C3588AF32003D0410046183D /* DoitViewController.swift */,
 				C3D8AC3B2003B0D400870BCD /* Task.swift */,
 				C3D8AC2A20033C7300870BCD /* Main.storyboard */,
@@ -147,6 +150,7 @@
 			files = (
 				C3D8AC3C2003B0D400870BCD /* Task.swift in Sources */,
 				C3588AF42003D0410046183D /* DoitViewController.swift in Sources */,
+				C321F01B2005FEEC0078FB57 /* CompleteTaskViewController.swift in Sources */,
 				C3D8AC2920033C7300870BCD /* TaskViewController.swift in Sources */,
 				C3D8AC2F20033C7300870BCD /* DoIT.xcdatamodeld in Sources */,
 				C3D8AC2720033C7300870BCD /* AppDelegate.swift in Sources */,

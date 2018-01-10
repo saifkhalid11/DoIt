@@ -13,6 +13,8 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet weak var TableviewLabel: UITableView!
     
     var DoIt : [Task] = []
+    var selectedIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,14 +29,21 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return DoIt.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let Task = DoIt[indexPath.row]
+        let task = DoIt[indexPath.row]
         let cell = UITableViewCell()
-        if Task.Important == true {
-            cell.textLabel?.text = "☞\(Task.Name)"
+        if task.Important == true {
+            cell.textLabel?.text = "☞\(task.Name)"
         }else{
-        cell.textLabel?.text = Task.Name
+        cell.textLabel?.text = task.Name
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedIndex = indexPath.row
+        let task = DoIt[indexPath.row]
+        performSegue(withIdentifier: "SelectTaskSegue", sender: task)
     }
     
     func makeTaskarray() -> [Task] {
@@ -62,8 +71,17 @@ class TaskViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextVC = segue.destination as! DoitViewController
-        nextVC.previousVC = self
+        if segue.identifier == "AddSegue"{
+            let nextVC = segue.destination as! DoitViewController
+            nextVC.previousVC = self
+        }
+        
+        if segue.identifier == "SelectTaskSegue"{
+            let nextVC = segue.destination as! CompleteTaskViewController
+            nextVC.task = sender as! Task
+            nextVC.previousVC = self
+
+        }
     }
     
     
